@@ -41,6 +41,16 @@ cp .env.example .env
 
 Then edit the `.env` file with your Wekan instance details and API token.
 
+## Run with npx
+
+You can also run the MCP server directly without cloning the repository:
+
+```bash
+npx github:jonathan-dd/wekan-mcp
+```
+
+Make sure you have your `.env` file configured in your current directory, or set the environment variables before running the command.
+
 ## Environment Variables
 
 The `.env` file contains:

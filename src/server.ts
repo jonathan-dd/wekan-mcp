@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // made by namar0x0309 with ❤️ at GoAIX
 import 'dotenv/config';
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";

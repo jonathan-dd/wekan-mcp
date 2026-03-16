@@ -1,16 +1,21 @@
 {
-  "name": "wekanmcpserver",
+  "name": "wekan-mcp",
   "version": "1.0.0",
   "description": "MCP server for Wekan - made by namar0x0309 with ❤️ at GoAIX",
   "main": "dist/server.js",
   "type": "module",
+  "bin": {
+    "wekan-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "start": "node dist/server.js",
     "dev": "ts-node src/server.ts",
-
     "inspect": "mcp-inspector --config ./mcp-inspector-config.json --server wekan",
-
     "inspect:watch": "npm run build && mcp-inspector --config ./mcp-inspector-config.json --server wekan"
   },
   "keywords": [],
